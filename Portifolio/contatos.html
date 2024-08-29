@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            background-color: #000000;
+        }
+        /*Criando a Grade*/
+        .grade {
+            display: grid;
+        }
+
+        header {
+            grid-column-start: 1;
+            grid-column-end: 12;
+
+        }
+
+        .cabecalho {
+            list-style-type: none;
+            background-color: #393e46;
+            color: rgb(228, 228, 228);
+            margin: 0;
+            height: 50px;
+            text-align: center;
+        }
+         /*Editando a lista*/
+        li {
+            float: left;
+            padding-left: 300px;
+            font-size: 20px;
+            margin-top: 12px;
+        }
+        /*Posicionando o footer */
+        footer {
+            background-color: #393e46;
+            color: white;
+            text-align: center;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            ;
+
+        }
+
+        a {
+            color: white;
+        }
+
+        nav {
+            color: white;
+            text-align: center;
+        }
+
+        .formulario {
+            color: white;
+
+        }
+        /*Ajustar os input para ficarem posicionados igualmente*/
+        input {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            left: 50px;
+        }
+    </style>
+    <script>
+        function monstrarMensagem() {
+            alert("Suas informações foram enviadas, obrigado!")
+        }
+    </script>
+</head>
+
+<body>
+    <header class="grade">
+        <ul class="cabecalho">
+            <li><a href="index.html">Sobre mim</a></li>
+            <li><a href="formacao.html">Formações</a></li>
+            <li class="lista"><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contatos.html">Contatos</a></li>
+    </header>
+    </ul>
+    <nav>
+        <h2>Contatos</h2>
+    </nav>
+    <form class="formulario">
+        <h3>Preencha o formulário para contato</h3>
+        <div class="grupo">
+            <label for="nome" id="nome">Nome: </label>
+            <input type="text"><br><br>
+        </div>
+        <div class="grupo">
+            <label for="email" id="email">E-mail: </label>
+            <input type="text"> <br><br>
+        </div>
+        <button onclick="monstrarMensagem()">Enviar</button>
+    </form>
+    <img style="position: absolute;left: 1000px;top: 50px;" src="Blastoise.gif" width="600px">
+    <footer class="grade">
+        <h1>Vamos juntos nesta jornada</h1>
+    </footer>
+</body>

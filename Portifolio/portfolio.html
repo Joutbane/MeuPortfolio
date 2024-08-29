@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        body {
+            margin: 0;
+            background-color: #000000;
+        }
+        /*Criando a Grade*/
+        .grade {
+            display: grid;
+        }
+        header {
+            grid-column-start: 1;
+            grid-column-end: 12;
+
+        }
+        .cabecalho {
+            list-style-type: none;
+            background-color: #393e46;
+            color: rgb(228, 228, 228);
+            margin: 0;
+            height: 50px;
+            text-align: center;
+        }
+         /*Editando a lista*/
+        li {
+            float: left;
+            padding-left: 300px;
+            font-size: 20px;
+            margin-top: 12px;
+        }
+        /*Posicionando o footer */
+        footer {
+            background-color: #393e46;
+            color: white;
+            text-align: center;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+        a {
+            color: white;
+        }
+
+        nav {
+            color: white;
+            text-align: center;
+        }
+        /*Ajustando o Texto*/
+        p {
+            font-size: 22px;
+            position: absolute;
+            top: 200px;
+            left: 120px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            min-height: 50vh;
+            max-width: 380px;
+            z-index: 1;
+            color: white;
+        }
+        .onepiece{
+            position: absolute;
+            top: 600px;
+            left: 120px;
+            z-index: 1;
+            background-color: #393e46;
+            padding: 10px 20px;
+            color: white;
+            font-size: 22px;
+        }
+        .onepiece:hover{
+            background-color:lightsteelblue;
+            color: #393e46;
+        }
+    </style>
+</head>
+
+<body>
+        <header class="grade">
+            <ul class="cabecalho">
+                <li><a href="index.html">Sobre mim</a></li>
+                <li><a href="formacao.html">Formações</a></li>
+                <li class="lista"><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contatos.html">Contatos</a></li>
+        </header>
+        </ul>
+        <nav>
+            <h2>Portfolio</h2>
+        </nav>
+        <img class="imagem" style="height: 600px; width: 1000px;position:absolute;top: 150px;right: 100px;"
+            src="Projeto_One_Piece.jpg">
+        <img src="snorlax.gif" style="position: absolute;width: 150px;height: 150px;left: 100px; top: 200px;" >
+        <p>
+            Este foi um trabalho feito em uma live do canal Dev em Dobro onde eles abortaram assuntos de html, css e
+            java de uma forma muito engraçada e descontraida e fizeram junto com os telespectadores uma página usando o
+            como tema o anime criado por Eichiro Oda: One Piece
+        </p>
+        <button class="onepiece" onclick="paginaOnePiece()">Conheça o Projeto</button>
+        <footer>
+            <h1>Vamos juntos nesta jornada</h1>
+        </footer>
+    <script>
+        //Ir para página do portfolio
+        function paginaOnePiece(){
+            window.location.href='https://joutbane.github.io/One_Piece/'
+        }
+    </script>
+</body>

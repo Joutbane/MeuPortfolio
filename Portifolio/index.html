@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            background-color: #000000;
+        }
+        /*Criando a Grade*/
+        .grade {
+            display: grid;
+        }
+
+        header {
+            grid-column-start: 1;
+            grid-column-end: 12;
+
+        }
+
+        .cabecalho {
+            list-style-type: none;
+            background-color: #393e46;
+            color: rgb(228, 228, 228);
+            margin: 0;
+            height: 50px;
+            text-align: center;
+        }
+        /*Editando a lista*/
+        li {
+            float: left;
+            padding-left: 300px;
+            font-size: 20px;
+            margin-top: 12px;
+        }
+
+        .paragrafos {
+            font-size: 21px;
+            color: white;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        #paragrafo1 {
+            text-align: center;
+        }
+
+        #paragrafo2 {
+            position: absolute;
+            top: 0;
+            left: 120px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            min-height: 100vh;
+            max-width: 380px;
+            z-index: 1;
+        }
+
+        #paragrafo3 {
+            position: absolute;
+            top: 0;
+            right: 120px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            min-height: 100vh;
+            max-width: 380px;
+            z-index: 1;
+        }
+        /*Posicionando o footer */
+        footer {
+            background-color: #393e46;
+            color: white;
+            text-align: center;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+
+        a {
+            color: white;
+        }
+
+        nav {
+            color: white;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="grade">
+        <ul class="cabecalho">
+            <li><a href="index.html">Sobre mim</a></li>
+            <li><a href="formacao.html">Formações</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contatos.html">Contatos</a></li>
+        </ul>
+    </header>
+    <nav>
+        <h2>Sobre Mim</h2>
+    </nav>
+    <section>
+        <p id="paragrafo1" class="paragrafos"> Olá, eu sou João Vitor, nasci no dia 08/04/2002, em Ceilândia - DF,
+            tenho 22 anos de idade, sou um completo
+            apaixonado por tecnologia, anime, jogos e músicas, tendo como genêro favorito rock nacional como Fresno,
+            Capital Inicial, CPM22, etc, adoro conversar e trocar experiencias ou apenas palavras atoas, nas horas
+            vagas eu me ocupo com aquilo que nasci para fazer que é caçar pokémons.
+        </p>
+        <img style="position: relative;position: absolute ;left: 290px;" src="reshiram.gif" height="110px">
+        <img style="margin-left: 700px;" src="JoaoVitor.jpeg" width="500px" height="500px">
+        <img style="position: relative;position: absolute ;right: 325px;" src="Gengar.gif" height="100px">
+        <p id="paragrafo2" class="paragrafos">Atualmente trabalho em um setor de PCP [PlanejamentoeControle de
+            Produção]em uma mineradora de
+            bauxita(bauxita é o principal minério de alumínio).Terra Goyana mineradora encontrada em Barro Alto - GO
+            no
+            interior do Goiás,masprecisamente em uma cadeia de serraem um dos seus municipios conhecido como
+            Souzalândia - GO
+        </p>
+        <p id="paragrafo3" class="paragrafos">Foi por meio do meu serviço que fui apresentado a algumas tecnologias
+            e metodos de análises a qual criei um
+            grande gosto, e uma grande saciedade de conhecimento sobre a área e por meio disso acabei dando entrada
+            no
+            curso de Análise e Desenvolvimento de Sistema.</p>
+    </section>
+    <footer>
+        <h1>Vamos juntos nesta jornada</h1>
+    </footer>
+    </header>
+</body>
+
+</html>

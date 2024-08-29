@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            background-color: #000000;
+        }
+        /*Criando a Grade*/
+        .grade {
+            display: grid;
+        }
+
+        header {
+            grid-column-start: 1;
+            grid-column-end: 12;
+
+        }
+
+        .cabecalho {
+            list-style-type: none;
+            background-color: #393e46;
+            color: rgb(228, 228, 228);
+            margin: 0;
+            height: 50px;
+            text-align: center;
+        }
+        /*Editando a lista*/
+        li {
+            float: left;
+            padding-left: 300px;
+            font-size: 20px;
+            margin-top: 12px;
+        }
+        /*Posicionando o footer */
+        footer {
+            background-color: #393e46;
+            color: white;
+            text-align: center;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+
+        }
+
+        a {
+            color: white;
+        }
+
+        nav {
+            color: white;
+            text-align: center;
+        }
+
+        table {
+            color: aliceblue;
+        }
+        /*Posicionamneto*/
+        section {
+            font-size: 22px;
+            text-align: center;
+            position: absolute;
+            top: 150px;
+            left: 650px;
+            padding: 10px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <header class="grade">
+        <ul class="cabecalho">
+            <li><a href="index.html">Sobre mim</a></li>
+            <li><a href="formacao.html">Formações</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contatos.html">Contatos</a></li>
+        </ul>
+    </header>
+    <nav>
+        <h2>Formações</h2>
+    </nav>
+    <section>
+        <table>
+            <tr>
+                <th style="color: purple;">Formações Acadêmicas</th>
+            </tr>
+            <tr><br>
+                <td>Cursando Tecnologo em Análise e Desenvolvimento de Sistemas </td>
+            </tr>
+            <tr>
+                <td>Curso de Assistente administrativo</td>
+            </tr>
+            <tr>
+                <td>Ensino Médio Completo</td>
+            </tr>
+            <tr>
+                <td>Curso de Excel Avançado</td>
+            </tr>
+            <tr>
+                <td>Segurança e Relátorios - Administrador - Google Workspace</td>
+            </tr>
+            <tr>
+                <td>
+                    Vaul - Administrador - Google Workspace
+                </td>
+            </tr>
+        </table>
+        <img src="Grovyle.gif" alt="">
+    </section>
+    <footer class="grade">
+        <h1>Vamos juntos nesta jornada</h1>
+    </footer>
+</body>
